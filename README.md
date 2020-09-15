@@ -42,9 +42,9 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the load balancer can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-*10.10.0.4
-*10.10.0.6
-*10.10.0.7
+* 10.10.0.4
+* 10.10.0.6
+* 10.10.0.7
 
 Machines within the network can only be accessed by the jump box vm running the ansible/docker containers.
 
