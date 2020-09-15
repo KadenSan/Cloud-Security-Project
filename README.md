@@ -32,17 +32,22 @@ The configuration details of each machine may be found below.
 |----------|-----------|------------|------------------|
 | Jump Box | Gateway   | 10.10.0.5  | Linux            |
 | ELK      |ELK Server | 10.1.0.4   | Linux            |
-| Web VM   |DVWA Server| 10.10.0.6  | Linux            |
+| Web1 VM  |DVWA Server| 10.10.0.6  | Linux            |
+| Web2 VM  |DVWA Server| 10.10.0.7  | Linux            |
+| Web3 VM  |DVWA Server| 10.10.0.4  | Linux            |
+
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the load balancer can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+*10.10.0.4
+*10.10.0.6
+*10.10.0.7
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the jump box vm running the ansible/docker containers.
+
 
 A summary of the access policies in place can be found in the table below.
 
