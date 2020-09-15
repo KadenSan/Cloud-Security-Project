@@ -28,12 +28,11 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.10.0.5  | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name     | Function  | IP Address | Operating System |
+|----------|-----------|------------|------------------|
+| Jump Box | Gateway   | 10.10.0.5  | Linux            |
+| ELK      |ELK Server | 10.1.0.4   | Linux            |
+| Web VM   |DVWA Server| 10.10.0.6  | Linux            |
 
 ### Access Policies
 
