@@ -35,13 +35,13 @@ The configuration details of each machine may be found below.
 | Web1 VM  |DVWA Server| 10.10.0.6  | Linux            |
 | Web2 VM  |DVWA Server| 10.10.0.7  | Linux            |
 | Web3 VM  |DVWA Server| 10.10.0.4  | Linux            |
-
+| L.B.     | L.B.      | 168.4.28.6 | Linux            |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the load balancer and the jump box can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the load balancer (L.B.) and the jump box can accept connections from the Internet. Access to the load balancer is only allowed from the following IP addresses:
 * 10.10.0.4
 * 10.10.0.6
 * 10.10.0.7
@@ -51,11 +51,11 @@ Machines within the network can only be accessed by the jump box vm running the 
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes                 | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name     | Publicly Accessible | Allowed IP Addresses          |
+|----------|---------------------|-------------------------------|
+| Jump Box |    Yes              |   my public ipv4              |
+| Web VMs  |    No               |                               |
+| L.B.     |    Yes              |                               |
 
 ### Elk Configuration
 
