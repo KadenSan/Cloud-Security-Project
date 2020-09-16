@@ -54,8 +54,9 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses          |
 |----------|---------------------|-------------------------------|
 | Jump Box |    Yes              |   my public ipv4              |
-| Web VMs  |    No               |                               |
-| L.B.     |    Yes              |                               |
+| Web VMs  |    No               |     10.10.0.5                 |
+| L.B.     |    Yes              |    any ipv4                   |
+| Elk      |    No               |    10.10.0.5                  |
 
 ### Elk Configuration
 
