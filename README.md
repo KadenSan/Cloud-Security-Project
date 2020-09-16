@@ -74,17 +74,27 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-* 10.10.0.4
-* 10.10.0.6
-* 10.10.0.7
+* Web1 VM 10.10.0.4
+* Web2 VM 10.10.0.6
+* Web3 VM 10.10.0.7
 
 We have installed the following Beats on these machines:
 
+Machines:
+* Jump Box
+* Elk
+* Web1 VM
+* Web2 VM
+* Web3 VM
+
+Beats:
 * [filebeat-config.yml](Ansible/filebeat-config.yml)
 * [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+* The filebeat elasticach module usually deals with audit logs, deprecation logs, gc logs, server logs, and slow logs.
+* The metricbeat module collects info such as cpu usage, memory, disk, network, and etc... of a system.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -99,4 +109,3 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
