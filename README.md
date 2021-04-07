@@ -46,7 +46,7 @@ Only the load balancer (L.B.) and the jump box can accept connections from the I
 * 10.10.0.6
 * 10.10.0.7
 
-Machines within the network can only be accessed by the jump box vm running the ansible/docker containers.
+Machines within the network can only be accessed by the jump box VM running the ansible/docker containers.
 
 
 A summary of the access policies in place can be found in the table below.
